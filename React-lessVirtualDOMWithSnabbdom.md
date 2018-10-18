@@ -1,4 +1,6 @@
-# 使用 sanbbdom 实现无 react 的虚拟 DOM：函数无所不能！
+# [译] 使用 sanbbdom 实现无 react 的虚拟 DOM：函数无所不能！
+
+###### 原文链接：[https://medium.com/@yelouafi/react-less-virtual-dom-with-snabbdom-functions-everywhere-53b672cb2fe3](https://medium.com/@yelouafi/react-less-virtual-dom-with-snabbdom-functions-everywhere-53b672cb2fe3)
 
 React 对于 JavaScript 社区做了真正意义上的补充。 虽然人们可以在 JavaScript 里写存在一定争议性的 JSX（类似 HTML 的语法），但是这和 Virtual DOM 的概念不一样。
 
@@ -12,7 +14,7 @@ Virtual DOM 因其快速的性能而受到人们的重视。但也有一个同�
 
 因此，我们将选择一个独立和简单的 JavaScript（没有 JSX）Virtual DOM 库，因为我们需要研究最小的基本谜题。
 
-周围有一些好的独立的 Virtual DOM 库，在我的文章里，我将  使用 Simon Friis Vindum 写的一个很小的库 snabbdom [(paldepind/snabbdom)](https://github.com/snabbdom/snabbdom),但是这个例子可以通过其他任何类似的库实现，例如 Matt Esch 的[virtual-dom](https://github.com/Matt-Esch/virtual-dom)
+周围有一些好的独立的 Virtual DOM 库，在我的文章里，我将使用 Simon Friis Vindum 写的一个很小的库 snabbdom [(paldepind/snabbdom)](https://github.com/snabbdom/snabbdom),但是这个例子可以通过其他任何类似的库实现，例如 Matt Esch 的[virtual-dom](https://github.com/Matt-Esch/virtual-dom)
 
 ### snabbdom 快速入门
 
@@ -46,9 +48,9 @@ snabbdom 是以 CommonJs modules 的方式提供的，所以我们需要一个�
 2. （可选）数据对象，它指定虚拟节点的属性（类，样式，事件......），稍后会看到。
 3. （可选）一个字符串或包含虚拟子节点的数组
 
-首先，patch 期望传入一个（例如 id 为 placeholder）DOM 元素和一个初始的虚拟节点。然后创建初始的 DOM 树来映射虚拟的 DOM 树。在随后的调用中，我们为它传入之前和新的虚拟节点。然后，它对 2 个虚拟节点进行对比，再在 DOM 中  进行必要的修改，将当前 DOM 新的状态映射成新的虚拟表达。
+首先，patch 期望传入一个（例如 id 为 placeholder）DOM 元素和一个初始的虚拟节点。然后创建初始的 DOM 树来映射虚拟的 DOM 树。在随后的调用中，我们为它传入之前和新的虚拟节点。然后，它对 2 个虚拟节点进行对比，再在 DOM 中进行必要的修改，将当前 DOM 新的状态映射成新的虚拟表达。
 
-为了快速地启动项目，我创建了一个 GitHub 仓库，包含所有基本  配置并且可以马上启动。因此，第一步是在[(YelouaFi/SababdOn)](https://github.com/yelouafi/snabbdom-starter)克隆这个仓库。之后，通过 npm install 安装所有的依赖。该依赖包使用 Browserify 进行模块打包，Watchify 进行文件更改的自动构建，Babel 允许我们编写不错的 ES6 代码并将其转换为 ES5 兼容的代码。
+为了快速地启动项目，我创建了一个 GitHub 仓库，包含所有基本配置并且可以马上启动。因此，第一步是在[(YelouaFi/SababdOn)](https://github.com/yelouafi/snabbdom-starter)克隆这个仓库。之后，通过 npm install 安装所有的依赖。该依赖包使用 Browserify 进行模块打包，Watchify 进行文件更改的自动构建，Babel 允许我们编写不错的 ES6 代码并将其转换为 ES5 兼容的代码。
 
 安装好后输入
 
