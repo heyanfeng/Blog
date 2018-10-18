@@ -260,7 +260,7 @@ postMessage()获取一个参数用来表示要发送的数据，该数据可以�
 
 在调用 close()时，将丢弃事件循环中存在的任何等待中的任务，并关闭 web worker 作用域。
 
-查看 close()的文档可能会让人感到困惑，因为有一个[版本](https://developer.mozilla.org/en-US/docs/Web/API/WorkerGlobalScope)已弃用 close()方法，这个版本属于 WorkerGlobalScope 接口。实际上，我们可以创建两种类型的 web worker：dedicated 和 shared， 每种类型都有自己专属的接口，分别是[DedicatedWorkerGlobalScope](https://developer.mozilla.org/en-US/docs/Web/API/DedicatedWorkerGlobalScope) 和 [SharedWorkerGlobalScope](https://developer.mozilla.org/en-US/docs/Web/API/SharedWorkerGlobalScope/close)。在本文介绍的范围，我们使用了一个 dedicated web worker。这两种类型的 web worker 之间的区别以及在何处如何使用它们将在未来的帖子中通过终止 workers 的最佳实践中得到解决！
+查看 close()的文档可能会让人感到困惑，因为有一个[版本](https://developer.mozilla.org/en-US/docs/Web/API/WorkerGlobalScope)已弃用 close()方法，这个版本属于 WorkerGlobalScope 接口。实际上，我们可以创建两种类型的 web worker：dedicated 和 shared，每种类型都有自己专属的接口，分别是[DedicatedWorkerGlobalScope](https://developer.mozilla.org/en-US/docs/Web/API/DedicatedWorkerGlobalScope) 和 [SharedWorkerGlobalScope](https://developer.mozilla.org/en-US/docs/Web/API/SharedWorkerGlobalScope/close)。在本文介绍的范围，我们使用了一个 dedicated web worker。这两种类型的 web worker 之间的区别以及在何处如何使用它们将在未来的帖子中通过终止 workers 的最佳实践中得到解决！
 
 ## 概括
 
@@ -274,6 +274,6 @@ postMessage()获取一个参数用来表示要发送的数据，该数据可以�
 
 ## 关于 Auth0
 
-Auth0，IDaaS 的全球领导者，为成千上万的企业客户提供用于其 Web，移动，物联网和内部应用程序的通用身份平台。其可扩展平台每月无缝地验证和保护超过 1.5B 的登录，使其受到开发者的喜爱并受到全球企业的信赖。该公司位于华盛顿州贝尔维尤的美国总部以及位于布宜诺斯艾利斯，伦敦，东京和悉尼的其他办事处为位于 70 多个国家的客户提供支持。
+Auth0，IDaaS 的全球领导者，为成千上万的企业客户提供用于其 Web，Mobile，物联网和内部应用程序的通用身份平台。其可扩展平台每月无缝地验证和保护超过 1.5B 的登录，使其受到开发者的喜爱并受到全球企业的信赖。该公司位于华盛顿州贝尔维尤的美国总部以及位于布宜诺斯艾利斯，伦敦，东京和悉尼的其他办事处为位于 70 多个国家的客户提供支持。
 
 有关更多信息，请访问[https://auth0.com](https://auth0.com)或在 Twitter 上关注[@auth0](https://twitter.com/auth0)。
