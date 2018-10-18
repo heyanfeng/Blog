@@ -20,7 +20,7 @@ Web workers 使开发者能够从 JavaScript 中的并行编程中获益。并�
 
 > JavaScript 中 的 web worker 允许我们创建并行程序以同时执行多个操作而不是交错
 
-> [交错](https://www.dictionary.com/browse/interleaving)指的是” 通过设置例如一组指令等等，以便以交替的方式执行两个或更多个程序“
+> [交错](https://www.dictionary.com/browse/interleaving)指的是“通过设置例如一组指令等等，以便以交替的方式执行两个或更多个程序”
 
 接下来我们将探讨一下如何在 JavaScript 中使用 web worker 以及它为 web 应用程序带来的好处
 
